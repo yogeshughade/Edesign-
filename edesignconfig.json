@@ -1,0 +1,36 @@
+{
+        "languageSettings": {
+          "availableLanguages": [
+            "en",
+            "ru"
+          ],
+          "defaultLanguage": "en"
+        },
+        "UI": {
+          "TITLE" : "eDesign"
+        },
+        "enclosureSettings":{
+          "minSlotWidth": 15,
+          "minGapBetweenRails":149
+        },
+        "urlSettings":{
+          "PROJECT_MANAGEMENT":{
+            "BASE":"projectmanagement",
+            "GET_PROJECT_LIST":"list",
+            "ANONYMOUS":"Anonymous",
+            "GET_PROJECT":"",
+            "RESELLER":"reseller"
+          },
+          "PRODUCT_CATALOG":{
+            "BASE":"productcatalog",
+            "GET_PRODUCT_CATALOG":""
+          },
+          "ProductSelector":{
+            "productSelectorListing" :"http://localhost:7013/api/v1/ProductSelector",
+            "productSelector":"http://localhost:7013/api/v1/ProductSelector/{psId}",
+            "productImage":"https://gw-api.schneider-electric.com/sc/products/image/{reference}"
+          }
+        }
+        
+}     
+

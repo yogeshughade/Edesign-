@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"  charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="../assets/bootstrap3.4.min.css"> 
+    <link rel="stylesheet" href="../assets/errorPage.css">
+    <link rel="stylesheet" href="../styles.scss">
+    <script src="../assets/jquery.min.js"></script>
+    <script src="../assets/bootstrap.min.js"></script>
+<script>
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+    if (msie > 0 || !navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+    {
+        window.location.href = window.location.origin;
+        this.router.navigate([window.location.href], { queryParams: filter, skipLocationChange: true });
+    }
+</script>
+</head>
+
+<body class="background">
+
+
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                <img src="../assets/logo.svg" class="imageSize">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right">
+                <img src="../assets/images/Schneider_Logo.svg" class="imageSize pull-right">
+            </div>
+        </div>
+    </div>
+
+    <div class="se-banner d-flex">
+        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-sm-offset-4 col-md-offset-5 col-lg-offset-6 col-xl-offset-7">
+            <div class="backgroundSmoke">
+                <div class="BannerHeadFont mb-2">
+                  <span class="se-medium-green">Save time </span>
+                  <span>in the process of creating a residential project together with </span>
+                  <span class="se-medium-green">eDesign!</span>
+                </div>
+  
+                <div class="BannerMiddleFont"><div class="cheatSheetIcon se-icon se-medium-green tick-icon">notification_ok</div> Creating an electrical panel</div>
+                <div class="BannerMiddleFont"><div class="cheatSheetIcon se-icon se-medium-green tick-icon">notification_ok</div> Selection of switches and sockets</div>
+                <div class="BannerMiddleFont"><div class="cheatSheetIcon se-icon se-medium-green tick-icon">notification_ok</div> Full package of documents: one-line diagram, marking and specification</div>
+                <div class="BannerMiddleFont"><div class="cheatSheetIcon se-icon se-medium-green tick-icon">notification_ok</div> List of products - as a ready-made commercial offer</div>
+  
+                <div class="BannerFooterFont mt-2">
+                  <span class="se-medium-green">You can be sure of reliability </span>
+                  <span>your project created with eDesign, because the application checks all projects for compliance with current standards and regulations</span>
+                </div>
+            </div>
+            <!-- <div class="backgroundSmoke">
+                <div class="fontSizeHeader">eDesign</div>
+                <div class="fontSizeMessage">Веб-приложение для просчета проекта электроснабжения дилых помещений с комплектом документов</div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- <img src="../assets/errorPageBackground.jpg" class="backgroundimageSize"> -->
+
+<div class="container-fluid mt-4">   
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-3">
+            <div class="bg-white text-dark px-4 pt-3 pb-3 border dgrey">
+                <p class="h1-text">Browser not supported</p>
+                <p class="h2-text">Please launch eDesign from Chrome/FireFox/Safari/Edge for the best experience.</p>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-3">
+            <div class="bg-white border dgrey text-dark h-75">
+                <div class="col-xs-12 col-sm-12 col-md-12 colorbrand border-bottom pt-3">Do you know about the mySchneider app?</div>
+                <div class="col-xs-12 col-sm-12 col-md-12 pt-3 fontSizeForAppInfo">Now you can access your eDesign project documents anytime, anywhere with the mySchneider app!</div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="appsMessageContainer fontSizeInnerMessage h-100">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-3">
+                    <a href="https://play.google.com/store/apps/details?id=com.schneider.qrcode.tocase&hl=ru" target="_blank">
+                    <div class="messageBackground h-100 rounded d-flex">
+                        <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 col-xl-2 px-0 text-center">
+                        <img src="../assets/images/google_play_icon.svg" class="logoSize">
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-10 col-lg-9 col-xl-10">
+                            <div class="whiteSpace">Download in</div>
+                            <div class="fontbold whiteSpace">Google Play</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-3">
+                    <a href="https://apps.apple.com/ru/app/myschneider/id714825126" target="_blank">
+                    <div class="messageBackground h-100 rounded d-flex">
+                        <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 col-xl-2 px-0 text-center">
+                            <img src="../assets/images/apple-white-icon.svg" class="logoSize">
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-10 col-lg-9 col-xl-10">
+                            <div class="whiteSpace">Download in</div>
+                            <div class="fontbold whiteSpace">App Store</div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div></div>
+
+
+
+
+
+
+<!-- 
+
+<div class="container-fluid mt-4">   
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-3">
+            <div class="bg-white text-dark px-4 pt-3 pb-3 border dgrey">
+            <p class="h1-text">Browser not Supported</p>
+            <p class="h2-text">Please launch eDesign from Chrome/FireFox/Safari/Edge for a better experience.</p>
+            </div>
+        </div>
+
+        <div class=" col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-3">
+            <div class="bg-white text-dark pt-3 border dgrey">
+                <div class="colorbrand border-bottom">Do you know about mySchneider app ?</div>
+                <div class="fontSizeForAppInfo">My Schneider App offers tailored services, 24/7 access to our catalog, expert support and information</div>
+                
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="appsMessageContainer fontSizeInnerMessage">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-3">
+                            <a href="https://play.google.com/store/apps/details?id=com.schneider.qrcode.tocase&hl=ru" target="_blank">
+                            <div class="messageBackground h-100 rounded d-flex">
+                                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 col-xl-2 px-0 text-center">
+                                <img src="../assets/images/google_play_icon.svg" class="logoSize">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-10 col-lg-9 col-xl-10">
+                                    <div class="whiteSpace">GET IT ON</div>
+                                    <div class="fontbold whiteSpace">Google Play</div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 pb-3">
+                            <a href="https://apps.apple.com/ru/app/myschneider/id714825126" target="_blank">
+                            <div class="messageBackground h-100 rounded d-flex">
+                                <div class="col-xs-3 col-sm-3 col-md-2 col-lg-3 col-xl-2 px-0 text-center">
+                                    <img src="../assets/images/apple-white-icon.svg" class="logoSize">
+                                </div>
+                                <div class="col-xs-9 col-sm-9 col-md-10 col-lg-9 col-xl-10">
+                                    <div class="whiteSpace">Download on</div>
+                                    <div class="fontbold whiteSpace">App Store</div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div> -->
+
+</body>
+
+</html>

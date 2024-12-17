@@ -1,0 +1,642 @@
+@import '../styles.scss';
+
+@import '/modules/_variables.scss';
+
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import '../modules/variables';
+@import '../assets/fonts-icon/css/styles.css';
+@import '~ngx-ui-switch/ui-switch.component.scss';
+
+
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Black.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-LightItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLightItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-SemiBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Italic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Heavy-Italic.woff2') format('woff2'),
+        url('Nunito-Heavy-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Heavy-Regular.woff2') format('woff2'),
+        url('Nunito-Heavy-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Light.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLight.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-BlackItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-SemiBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLightItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Italic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-LightItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Heavy-Regular.woff2') format('woff2'),
+        url('Nunito-Heavy-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-BlackItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('Nunito-Heavy-Italic.woff2') format('woff2'),
+        url('Nunito-Heavy-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraLight.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-ExtraBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Light.woff2') format('woff2'),
+        url('../assets/fonts/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../assets/fonts/Nunito-Black.woff2') format('woff2'),
+        url('../assets/fonts/NunitoBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+body, html {height: 100%; margin: 0; font-family: Nunito;}
+
+
+.header {background-color: #FFFFFF; border-bottom: 4px solid #3dcd58; padding-top: 6px; padding-bottom: 6px; width: 100%;}
+
+.mt-4{margin-top: 30px;}
+.pb-3{padding-bottom: 15px;}
+
+
+
+.tick-icon{font-size: 24px !important; vertical-align: bottom; font-weight: 600; }
+
+
+.BannerHeadFont{font-weight: 800 !important; font-size: 16px; line-height: 22px;}
+.BannerMiddleFont{font-weight: 300 !important; font-size: 13px; line-height: 22px; display: flex;}
+.BannerFooterFont{font-weight: 700 !important; font-size: 14px; line-height: 20px;}
+
+.se-medium-green{color: #32AD3C;}
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 480px) { 
+    
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 22px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 14px; line-height: 22px;}  
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 4% !important; }
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 22px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 10px 0px 6px 0px; line-height: 16px; }
+.h2-text {font-size: 20px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 15px; line-height: 22px; font-weight: 500; padding-bottom: 12px; padding-top: 12px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 15px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: table;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: flex;}
+
+.fontSizeInnerMessage{font-size: 10px;}  
+ }
+
+
+ @media only screen 
+ and (min-device-width: 375px) 
+ and (max-device-width: 667px) 
+ and (-webkit-min-device-pixel-ratio: 2)
+ and (orientation: landscape) { 
+
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 22px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 14px; line-height: 22px;}  
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 4% !important; }
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 22px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 10px 0px 6px 0px; line-height: 16px; }
+.h2-text {font-size: 20px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 15px; line-height: 22px; font-weight: 500; padding-bottom: 12px; padding-top: 12px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 15px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: flex;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: flex;}
+
+.fontSizeInnerMessage{font-size: 10px;}  
+}
+
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+   background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+   background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 22px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 14px; line-height: 22px;}  
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 4% !important; }
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 22px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 10px 0px 6px 0px; line-height: 16px; }
+.h2-text {font-size: 20px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 15px; line-height: 22px; font-weight: 500; padding-bottom: 12px; padding-top: 12px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 15px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: flex;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: flex;}
+
+.fontSizeInnerMessage{font-size: 10px;}  
+   }
+
+
+ 
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 22px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 14px; line-height: 22px;}  
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 4% !important; }
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 22px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 10px 0px 6px 0px; line-height: 16px; }
+.h2-text {font-size: 20px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 15px; line-height: 22px; font-weight: 500; padding-bottom: 12px; padding-top: 12px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 15px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: flex;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: flex;}
+
+.fontSizeInnerMessage{font-size: 10px;}  
+    }   
+    
+ 
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 22px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 14px; line-height: 22px;}
+
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 6% !important;}
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 14px 0px 10px 0px; line-height: 30px; }
+.h2-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 14px 0px 10px 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 16px; line-height: 22px; font-weight: 500; padding-bottom: 15px; padding-top: 15px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 16px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: -webkit-box;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: -webkit-box;}
+
+.fontSizeInnerMessage{font-size: 10px;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover; 
+}
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 6% !important; }
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 26px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 16px; line-height: 30px;}
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 2px 0px 4px 0px; line-height: 30px; }
+.h2-text {font-size: 24px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 16px; line-height: 22px; font-weight: 500; padding-bottom: 15px; padding-top: 15px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 16px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: -webkit-box;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: -webkit-box;}
+
+.fontSizeInnerMessage{font-size: 10px;}
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) {
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover; 
+}
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 8% !important; }
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 26px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 16px; line-height: 30px;}
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 2px 0px 4px 0px; line-height: 30px; }
+.h2-text {font-size: 24px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 16px; line-height: 22px; font-weight: 500; padding-bottom: 15px; padding-top: 15px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 16px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: -webkit-box;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: -webkit-box;}
+
+.fontSizeInnerMessage{font-size: 10px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover; 
+}
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 8% !important;}
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 26px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 16px; line-height: 30px;}
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 14px 0px 0px 0px; line-height: 30px; }
+.h2-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 14px 0px 0px 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 16px; line-height: 22px; font-weight: 500; padding-bottom: 15px; padding-top: 15px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 16px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: -webkit-box;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: -webkit-box;}
+
+.fontSizeInnerMessage{font-size: 10px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1367px) {
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover; 
+}
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 8% !important;}
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 26px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 16px; line-height: 30px;}
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 14px 0px 10px 0px; line-height: 30px; }
+.h2-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 14px 0px 10px 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #32AD3C; font-size: 16px; line-height: 22px; font-weight: 500; padding-bottom: 15px; padding-top: 15px; border-bottom: 1px solid #d7d7d7;}
+
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 16px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: -webkit-box;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: -webkit-box;}
+
+.fontSizeInnerMessage{font-size: 10px;}
+}    
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+.se-banner {position: relative; padding: 0px; width: 100%; margin: 0px; overflow: hidden;
+    background-image: url("../assets/images/Banner_edesign_desktop.jpg");
+    background-position: center; background-repeat: no-repeat; background-size: cover; 
+}
+
+.backgroundSmoke{background-color: rgba(0, 0, 0, 0.4); color: #ffffff; padding: 15px; margin: 8% !important;}
+
+.fontSizeHeader{font-family: nunito !important; font-weight: 500 !important; font-size: 26px; line-height: 32px;}
+.fontSizeMessage {font-family: nunito !important; font-weight: 300 !important; font-size: 16px; line-height: 30px;}
+
+.dgrey{border: 1px solid #d7d7d7 !important;}
+
+.imageSize{height: 50px; width: 100px;}
+.background{background-color: #f2f2f2;}
+
+.h1-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 300 !important; padding: 14px 0px 10px 0px; line-height: 30px; }
+.h2-text {font-size: 25px; text-align: center; font-family: nunito !important; font-weight: 500 !important; padding: 14px 0px 10px 0px;}
+
+.fontbold{font-weight: bold;}
+.colorbrand{color: #3dcd58; font-size: 16px; line-height: 22px; font-weight: 500; padding-bottom: 15px; padding-top: 15px; border-bottom: 1px solid #d7d7d7;}
+
+.logoSize{height: 35px; width: 35px;}
+.whiteSpace{white-space: nowrap; font-size: 15px; line-height: 18px;}
+.fontSizeForAppInfo{font-size: 16px; line-height: 22px; font-weight: 400; padding-bottom: 15px; padding-top: 15px;}
+
+.appsMessageContainer{background: #8c8c8c; padding: 15px 0px 0px 0px; display: -ms-flexbox; display: -webkit-box;}
+.messageBackground{background: #000; padding: 8px; color: #fff; display: -ms-flexbox; display: -webkit-box;}
+
+.fontSizeInnerMessage{font-size: 10px;}
+}    
