@@ -1,0 +1,1021 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import './modules/variables';
+@import './assets/fonts-icon/css/styles.css';
+@import '~ngx-ui-switch/ui-switch.component.scss';
+
+
+.img-responsive{height: 100%;}
+
+.switch small {top: -5px !important;}
+.switch.switch-small {height: 12px ;  border-radius: 20px !important; background-color: #cccccc !important; width: 40px;}
+.switch.switch-small.checked small {background: #3dcd58 !important;}
+.switch.switch-small small {background: #ffffff !important;}
+.switch.switch-small small {
+    width: 15px !important;
+    height: 15px !important;
+    right: calc(100% - 15px);
+   }
+   .switch.switch-small.checked small {
+    right: calc(100% - 26px);
+   }
+.switch.switch-small {
+    height: 8px !important;
+    width: 25px;
+    min-width: 25px !important;
+  }
+.wiser-style{
+     position: absolute;
+     right: 10px;
+}
+.wiser-style .switch.switch-small{
+     height: 8px !important;
+     width: 30px !important;
+ }
+ .wiser-style .switch.switch-small small {
+     width: 16px;
+     height: 16px;
+     right: calc(100% - 14px);
+ }
+ .wiser-style .switch small {
+     top: -4px !important;
+ }
+ .wiser-style .switch.checked small {
+     right: 0;
+     left: auto;
+ }
+@media only screen and (max-width: 767px) {
+
+.image-60{width: 100%; height:90px !important; overflow: hidden; background: #fff;}
+.image-position{transform: translate(-3%, -10%) !important;}
+.image-position-no{transform: translate(-26%, -10%) !important;}
+
+.header_title_right{font-size: 0.9rem; top: 12px; position: relative; margin-bottom: 10px; font-weight: 700;}
+.subheaders{font-size: 12px; margin-bottom: 6px; line-height: 1.3; margin-top: 16px;}
+
+// Button
+.btn-sm{padding: .3rem .4rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-md{padding: .35rem .5rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-lg{padding: .4rem 0.6rem; font-size: 0.9rem !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+
+
+.hidden-sm{display: none;}
+.visible-sm{display: inline;}
+
+.mylist-img{cursor: pointer; width: 42px; height: 42px; margin: 4px auto; text-align: center; display: block;}
+
+.sectionImage{margin: 30px auto; height: 20vh; width: 20vw}  
+.creat-project-title{font-size: 16px; margin: 15px auto; text-align: center;}
+.creat-project-icon{font-size: 84px; color: $se-light-grey; height: 84px; width: 84px; text-align: center; margin: 0px auto; display: block;}
+
+/* Projectlayout - SWITCHES & SOCKETS */
+.imageContainer{background: $se-ultra-light-grey-2; padding: 4px 8px;}  
+.settings-icon{font-size: 1.6rem; vertical-align: middle; margin-top: -8px; margin-left: -3px; margin-right: -5px; color: $se-anthracite-grey; height: 16px;}
+#carousel .slide {width: 20.8vw; margin-right: 8px; ; display: inline-grid; height: 60vh;}
+.addRoomContainer {width: 9% !important; height: 60vh;}
+
+.navbar-expand-sm .navbar-nav .nav-link {padding: 0.4rem 0rem; font-size: $font-size-xs; font-weight: $font-weight-bold;}
+.quantityIcons {font-size: 14px; border: 1px solid $color-list-background; border-radius: 10px;}
+
+label.container_checkbox.radio-inline {margin-right: 15px;}
+label.container_checkbox.radio-inline:last-child {margin-right: 0px;}
+
+.flex-row{flex-direction: column !important;} 
+
+.card {display: flex !important;}
+
+.flex-wrap1{border: 1px solid  $color-brand;}
+.flex-wrap2{border: 1px solid  $color-brand;}
+
+.firstlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family:  sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px; margin-top: 18px;}
+.secondlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px;}
+
+.header_title{font-size:$font-size-m; font-weight: $font-weight-bolder;}
+.project-wrapper {padding: 5px 0px 5px 10px; max-width: 155px; margin-left: 30px; }
+.project-wrapper1 {padding-left: 0px; max-width: 74px;}
+
+.pro_title{font-size:$font-size-s !important; color: $se-anthracite-grey !important; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical; word-wrap: break-word !important; max-width: 82px;}
+
+.table td, .table th { padding: .4rem .3rem !important; font-size: 11px;}
+.table tbody td {padding: 0.2rem !important; vertical-align: middle; font-size: 11px; }
+
+.arrowUpAlign{position: relative; left: 11px; bottom: 6px; opacity: 0.6;}
+.arrowDownAlign{position: relative; left: 0px; opacity: 0.6;}
+
+
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+.image-60{width: 100%; height:90px !important; overflow: hidden; background: #fff;}
+.image-position{transform: translate(10%, 0%) !important;}
+.image-position1{transform: translate(-8%, 0%) !important;}
+.image-position-no{transform: translate(-20%, 0%) !important;}
+
+.header_title_right{font-size: 0.9rem; top: 12px; position: relative; margin-bottom: 10px; font-weight: 700;}
+.subheaders{font-size: 12px; margin-bottom: 6px; line-height: 1.3; margin-top: 16px;}
+
+.configdiv, .maindiv{height: 340px; width: 240px; top: 130px; left: 540px; background: white; }
+
+.hidden-md{display: none;}
+.visible-md{display: inline;}
+
+.mylist-img{cursor: pointer; width: 42px; height: 42px; margin: 6px auto; text-align: center; display: block;}
+
+.sectionImage{margin: 30px auto; height: 20vh; width: 20vw}  
+.creat-project-title{font-size: 16px; margin: 15px auto; text-align: center;}
+.creat-project-icon{font-size: 84px; color: $se-light-grey; height: 84px; width: 84px; text-align: center; margin: 0px auto; display: block;}
+
+/* Projectlayout - SWITCHES & SOCKETS */
+.imageContainer{background: $se-ultra-light-grey-2; padding: 4px 8px;}  
+.settings-icon{font-size: 1.6rem; vertical-align: middle; margin-top: -8px; margin-left: -3px; margin-right: -5px; color: $se-anthracite-grey; height: 16px;}
+#carousel .slide {width: 20.8vw; margin-right: 8px; ; display: inline-grid; height: 62vh;}
+.addRoomContainer {width: 9% !important; height: 62vh;}
+
+.navbar-expand-sm .navbar-nav .nav-link {padding: 0.4rem 0rem; font-size: $font-size-s; font-weight: $font-weight-bold;}
+
+.quantityIcons {font-size: 14px; border: 1px solid $color-list-background; border-radius: 10px;}
+
+label.container_checkbox.radio-inline {margin-right: 15px;}
+label.container_checkbox.radio-inline:last-child {margin-right: 0px;}
+
+.flex-row{flex-direction: column !important;} 
+.card {display: flex !important;}
+
+.flex-wrap1{border: 1px solid  $color-brand;}
+.flex-wrap2{border: 1px solid  $color-brand;}
+
+.firstlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px; margin-top: 18px;}
+.secondlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px;}
+
+.header_title{font-size:$font-size-m; font-weight: $font-weight-bolder;}
+.project-wrapper {padding: 5px 0px 5px 0px; max-width: 155px; margin-left: 45px; }
+.project-wrapper1 {padding-left: 0px; max-width: 74px;}
+
+.pro_title{font-size:$font-size-s !important; color: $se-anthracite-grey !important; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical; word-wrap: break-word !important; max-width: 82px;}
+
+
+.table td, .table th { padding: .4rem .3rem !important; font-size: 11px;}
+.table tbody td {padding: 0.2rem !important; vertical-align: middle; font-size: 11px; }
+
+.arrowUpAlign{position: relative; left: 11px; bottom: 6px; opacity: 0.6;}
+.arrowDownAlign{position: relative; left: 0px; opacity: 0.6;}
+
+// Added Sticky panel code 
+.configdivNew, .maindivNew{background: transparent; 
+    height: 520px;
+    width: 301px;
+    top: 5px !important;
+    right: 0.5% !important;
+}
+// Added Sticky panel code
+.configdiv1, .maindiv1{
+    background: transparent;
+    height: 520px;
+    width: 30px;
+    top: 5px !important;
+    left: 96% !important;
+    position: absolute;
+    z-index: 1001;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+// Button
+.btn-sm{padding: .3rem .4rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-md{padding: .35rem .5rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-lg{padding: .4rem 0.6rem; font-size: 0.8rem !important; text-align: center; width: 138px; line-height: 1.5; border-radius: 0rem; border: 0px;}
+
+
+
+// Button
+.btn-sm{padding: .3rem .4rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-md{padding: .35rem .5rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-lg{padding: .4rem 0.6rem; font-size: 0.8rem !important; text-align: center; width: 138px; line-height: 1.5; border-radius: 0rem; border: 0px;}
+
+.BannerHeadFont{font-weight: 800 !important; font-size: 16px; line-height: 22px;}
+.BannerMiddleFont{font-weight: 300 !important; font-size: 13px; line-height: 22px; display: flex;}
+.BannerFooterFont{font-weight: 700 !important; font-size: 14px; line-height: 20px;}
+    
+
+.image-60{width: 100%; height:86px !important; overflow: hidden; background: #fff;}
+.image-position{transform: translate(45%, 0%) !important;}
+.image-position1{transform: translate(12%, 0%) !important;}
+
+.image-position-no{transform: translate(-6%, 0%) !important;}
+
+.header_title_right{font-size: 0.9rem; top: 12px; position: relative; margin-bottom: 10px; font-weight: 700;}
+.subheaders{font-size: 12px; margin-bottom: 6px; line-height: 1.3; margin-top: 16px;}
+
+
+.configdiv, .maindiv{height: 340px; width: 240px; top: 130px !important; left: 540px !important; background: white; }
+
+.hidden-lg{display: none;}
+.visible-lg{display: inline;}
+
+.mylist-img{cursor: pointer; width: 48px; height: 48px; margin: 6px;}
+
+.sectionImage{margin: 30px auto; height: 20vh; width: 18vw}
+
+.creat-project-title{font-size: 16px; margin: 15px auto; text-align: center;}
+.creat-project-icon{font-size: 84px; color: $se-light-grey; height: 84px; width: 84px; text-align: center; margin: 0px auto; display: block;}
+
+
+/* Projectlayout - SWITCHES & SOCKETS */    
+.imageContainer{background: $se-ultra-light-grey-2; padding: 6px 10px;}
+.settings-icon{font-size: 1.6rem; vertical-align: middle; margin-top: -8px; margin-left: -3px; margin-right: -5px; color: $se-anthracite-grey; height: 16px;}
+#carousel .slide {width: 20.8vw; margin-right: 12px; ; display: inline-grid; height: 66vh;}
+.addRoomContainer {width: 9.3% !important; height: 66vh;}
+
+.navbar-expand-sm .navbar-nav .nav-link {padding: 0.4rem 0rem; font-size: $font-size-s; font-weight: $font-weight-bold; display: inherit;}
+
+.quantityIcons {font-size: 15px; border: 1px solid $color-list-background; border-radius: 10px;}
+
+.card {display: flex !important;}
+
+.flex-row{flex-direction: column !important;} 
+.flex-wrap1{border: 1px solid  $color-brand;}
+.flex-wrap2{border: 1px solid  $color-brand;}
+.firstlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family:sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px; margin-top: 15px;}
+.secondlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px;}
+
+.header_title{font-size:$font-size-l; font-weight: $font-weight-bolder;}
+.project-wrapper {padding: 5px 0px 5px 0px; max-width: 155px; margin-left: 28px;}
+.project-wrapper1 {padding-left: 15px; max-width: 100px;}
+
+.pro_title{font-size:$font-size-m !important; color: $se-anthracite-grey !important; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical; word-wrap: break-word !important; max-width: 92px;}
+
+
+.table td, .table th { padding: .6rem .4rem !important; font-size: 12px;}
+.table tbody td {padding: 0.2rem !important; vertical-align: middle; font-size: 12px;}
+
+.arrowUpAlign{position: relative; left: 12px; bottom: 6px; opacity: 0.6;}
+.arrowDownAlign{position: relative; left: 0px; opacity: 0.6;}
+
+// Added Sticky panel code
+.configdivNew, .maindivNew{background: transparent; 
+    height: 520px;
+    width: 301px;
+    top: 5px !important;
+    right: 0.5% !important;
+}
+.configdiv1, .maindiv1{
+    background: transparent;
+    height: 520px;
+    width: 30px;
+    top: 5px !important;
+    left: 96% !important;
+    position: absolute;
+    z-index: 1001;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+// Button
+.btn-sm{padding: .3rem .4rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-md{padding: .35rem .5rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-lg{padding: .4rem 0.6rem; font-size: 0.8rem !important; text-align: center; width: 138px; line-height: 1.5; border-radius: 0rem; border: 0px;}
+
+// Button
+.btn-sm{padding: .3rem .4rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-md{padding: .35rem .5rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-lg{padding: .4rem 0.6rem; font-size: 0.8rem !important; text-align: center; width: 138px; line-height: 1.5; border-radius: 0rem; border: 0px;}
+
+.image-60img{margin-top: 34px;}
+.image-position{transform: translate(12%, 0%) !important;display: block;margin: 0 auto;}
+.image-position{transform: translate(12%, 0%) !important;display: block;margin: 0 auto;}
+.navbar-expand-sm .navbar-nav .nav-link {padding: 0.4rem 0rem; font-size: $font-size-s; font-weight: $font-weight-bold; width: max-content !important;}
+.btn-import {
+    padding: 0.3rem 0.8rem !important;
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
+    border: 0px !important;
+    max-width: 120px !important;
+    display: inline-flex !important;
+}
+ 
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+.BannerHeadFont{font-weight: 800 !important; font-size: 16px; line-height: 22px;}
+.BannerMiddleFont{font-weight: 300 !important; font-size: 13px; line-height: 22px; display: flex;}
+.BannerFooterFont{font-weight: 700 !important; font-size: 14px; line-height: 20px;}
+    
+.image-60{width: 100%; height:72px !important; overflow: hidden; background: #fff;}
+.image-position{transform: translate(-3%, 0%) !important;}
+.image-position1{transform: translate(-19%, 0%) !important;}
+
+.image-position-no{transform: translate(-5%, 0%) !important;}
+
+.header_title_right{font-size:$font-size-m; top: 7px; position: relative; margin-bottom: 0px; font-weight: 700;}
+.subheaders{font-size: 12px; padding-right: 26px; margin-bottom: 0px; line-height: 1.3; margin-top: 8px;}
+
+.configdiv, .maindiv{height: 340px; width: 240px; top: 130px !important; left: 540px !important; background: white; }
+
+.hidden-xl{display: none;}
+.visible-xl{display: inline;}
+
+.mylist-img{cursor: pointer; width: 60px; height: 60px; margin: 6px;}
+
+.sectionImage{margin: 30px auto; height: 25vh; width: 12vw}
+.creat-project-title{font-size: 16px; margin: 15px auto; text-align: center;}
+.creat-project-icon{font-size: 84px; color: $se-light-grey; height: 84px; width: 84px; text-align: center; margin: 0px auto; display: block;}
+
+/* Projectlayout - SWITCHES & SOCKETS */    
+.imageContainer{background: $se-ultra-light-grey-2; padding: 10px 15px;}
+.settings-icon{font-size: 1.6rem; vertical-align: middle; margin-top: -8px; margin-left: -3px; margin-right: -5px; color: $se-anthracite-grey; height: 16px;}
+#carousel .slide {width: 20.2vw; margin-right: 15px; display: inline-grid; height: 67.5vh;}
+.addRoomContainer {width: 12.8% !important; height: 67.5vh; }
+
+.navbar-expand-sm .navbar-nav .nav-link {padding: 0.5rem 0rem; font-size: $font-size-s; font-weight: $font-weight-bold;}
+
+.quantityIcons {font-size: 16px; border: 1px solid $color-list-background; border-radius: 10px;}
+
+.flex-row{flex-direction: row !important;} 
+.card {display: flex !important;}
+
+.flex-wrap1{border: 1px solid  $color-brand; min-height: 94px;}
+.flex-wrap2{border: 1px solid  $color-brand; min-height: 94px;}
+
+.firstlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px; margin-top: 18px;}
+.secondlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px; margin-top: 4px;}
+
+.header_title{font-size: $font-size-xl; font-weight: $font-weight-bolder;}
+.project-wrapper {padding: 5px 0px 5px 10px; max-width: 155px; margin-left: 15px; }
+.project-wrapper1 {padding-left: 15px; max-width: 100px;}
+
+.pro_title{font-size:$font-size-m !important; color: $se-anthracite-grey !important; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical; word-wrap: break-word !important; max-width: 92px;}
+
+
+.table td, .table th { padding: .6rem .4rem !important; font-size: 13px;}
+.table tbody td {padding: 0.2rem !important; vertical-align: middle; font-size: 13px;}
+
+.arrowUpAlign{position: relative; left: 13px; bottom: 6px; opacity: 0.6;}
+.arrowDownAlign{position: relative; left: 0px; opacity: 0.6;}
+
+// Added Sticky panel code
+.configdivNew, .maindivNew{background: transparent; 
+    height: 520px;
+    width: 301px;
+    top: 5px !important;
+    right: 0.5% !important;
+}
+.configdiv1, .maindiv1{
+    background: transparent;
+    height: 520px;
+    width: 30px;
+    top: 5px !important;
+    left: 96% !important;
+    position: absolute;
+    z-index: 1001;
+    }
+
+}
+
+@media only screen and (max-width: 1360px) {
+    .fonts-loaded {
+        line-height: 1.2em !important;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .fonts-loaded {
+        line-height: 1.2em !important;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1367px) {
+// Button
+.btn-sm{padding: .3rem .4rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-md{padding: .35rem .5rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-lg{padding: .4rem 0.6rem; font-size: 0.8rem !important; text-align: center; width: 138px; line-height: 1.5; border-radius: 0rem; border: 0px;}
+
+
+// Button
+.btn-sm{padding: .3rem .4rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-md{padding: .35rem .5rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-lg{padding: .4rem 0.6rem; font-size: 0.8rem !important; text-align: center; width: 146px; line-height: 1.5; border-radius: 0rem; border: 0px;}
+
+
+.BannerHeadFont{font-weight: 800 !important; font-size: 16px; line-height: 22px;}
+.BannerMiddleFont{font-weight: 300 !important; font-size: 13px; line-height: 22px; display: flex;}
+.BannerFooterFont{font-weight: 700 !important; font-size: 14px; line-height: 20px;}
+    
+
+.image-60{width: 100%; height:72px !important; overflow: hidden; background: #fff;}
+.image-position{transform: translate(2%, 0%) !important;}
+.image-position1{transform: translate(-13%, 0%) !important;}
+.image-position-no{transform: translate(3%, 0%) !important;}
+
+.header_title_right{font-size:$font-size-m; top: 5px; position: relative; margin-bottom: 5px; font-weight: 600;}
+.subheaders{font-size: 12px; margin-bottom: 0px; line-height: 1.4; margin-top: -2px; width: 90%;}
+
+
+.configdiv, .maindiv{height: 340px; width: 240px; top: 220px !important; left: 768px !important; background: white; }
+
+// Added Sticky panel code
+.configdivNew, .maindivNew{background: transparent; 
+    height: 520px;
+    width: 301px;
+    top: 5px !important;
+    right: 0.5% !important;
+}
+.configdiv1, .maindiv1{
+    background: transparent;
+    height: 520px;
+    width: 30px;
+    top: 5px !important;
+    left: 96% !important;
+    position: absolute;
+    z-index: 1001;
+    }
+    
+.hidden-xl{display: none;}
+.visible-xl{display: inline;}
+
+.mylist-img{cursor: pointer; width: 60px; height: 60px; margin: 6px;}
+
+.sectionImage{margin: 30px auto; height: 25vh; width: 12vw}
+
+
+.creat-project-title{font-size: 16px; margin: 15px auto; text-align: center;}
+.creat-project-icon{font-size: 84px; color: $se-light-grey; height: 84px; width: 84px; text-align: center; margin: 0px auto; display: block;}
+
+/* Projectlayout - SWITCHES & SOCKETS */    
+.imageContainer{background: $se-ultra-light-grey-2; padding: 10px 15px;}
+.settings-icon{font-size: 1.6rem; vertical-align: middle; margin-top: -8px; margin-left: -3px; margin-right: -5px; color: $se-anthracite-grey; height: 16px;}
+#carousel .slide {width: 20.2vw; margin-right: 15px; display: inline-grid; height: 70.8vh;}
+.addRoomContainer {width: 13.6% !important; height: 70.8vh; }
+
+.navbar-expand-sm .navbar-nav .nav-link {padding: 0.5rem 0rem; font-size: $font-size-m; font-weight: $font-weight-bold;}
+
+
+.quantityIcons {font-size: 16px; border: 1px solid $color-list-background; border-radius: 10px;}
+
+.flex-row{flex-direction: row !important;} 
+.card {display: flex !important;}
+
+.flex-wrap1{border: 1px solid  $color-brand; min-height: 94px;}
+.flex-wrap2{border: 1px solid  $color-brand; min-height: 94px;}
+
+.firstlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px; margin-top: 18px;}
+.secondlabel{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px; margin-top: 4px;}
+
+.header_title{font-size: $font-size-xl; font-weight: $font-weight-bolder;}
+
+.project-wrapper {padding: 5px 0px 5px 15px; max-width: 155px; margin-left: 0px; }
+.project-wrapper1 {padding-left: 15px; max-width: 100px;}
+
+.pro_title{font-size:$font-size-m !important; color: $se-anthracite-grey !important; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical; word-wrap: break-word !important; max-width: 92px;}
+
+.table td, .table th { padding: .6rem .4rem !important; font-size: 13px;}
+.table tbody td {padding: 0.2rem !important; vertical-align: middle; font-size: 13px;}
+
+.arrowUpAlign{position: relative; left: 13px; bottom: 6px; opacity: 0.6;}
+.arrowDownAlign{position: relative; left: 0px; opacity: 0.6;}
+
+
+
+}
+
+
+
+
+
+// Button
+.btn-sm{padding: .3rem .8125rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem !important; border: 0px;}
+.btn-md{padding: .35rem .875rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem !important; border: 0px;}
+.btn-lg{padding: .4rem 0.8rem; font-size: 1rem !important; line-height: 1.5; border-radius: 0rem !important; border: 0px; width: auto;}
+
+
+.navbar{padding: 0px 15px;}
+
+.filter-select-width{width: auto !important; display: inline-block !important; max-width: 47% !important;}
+.icons_align {font-size: 20px; cursor: pointer; text-align: center; margin-top: -2px; margin-left: -10px;}
+
+.se-life-green{color: $se-life-green;}
+.se-anthracite-grey{color: $se-anthracite-grey;}
+.se-medium-blue{color: $se-medium-blue !important;}
+
+// Sudarsan Code for BOM Table width Begin
+.width8{width: 8%;}
+.width10{width: 10%;}
+.width12{width: 12%;}
+.width15{width: 15%;}
+.width25{width: 25%;}
+.width28{width: 28%;}
+.width40{width: 40% !important;}
+.width48{width: 48% !important;}
+.width60{width: 60%;}
+// Sudarsan Code for Table width End
+
+
+/* width */
+::-webkit-scrollbar {width: 6px; height: 6px;}
+
+/* Track */
+::-webkit-scrollbar-track {background: #f1f1f1;}
+
+/* Handle */
+::-webkit-scrollbar-thumb {background: #888;}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {background: #555;}
+
+
+
+.overflow-x{overflow-x: scroll;}
+.iconSize{font-size: 1.2rem; padding-right: 5px; vertical-align: text-top; margin-left: -3px;}
+
+.border_grey{border: 1px solid lightgrey;}
+.box {display: flex !important; flex-wrap: wrap; display:table-row;}
+
+.form-group{margin-bottom: 0px !important; width: 100%;}
+
+.float-right{float:right;}
+.close{color: $se-white !important; opacity: 1 !important; font-weight: 500 !important; float: right; font-size: 1.8rem !important; line-height: 0.5 !important;}
+.close_grey{color: $se-anthracite-grey !important; float: right; font-size: 1.8rem !important; line-height: 0.5 !important; background: transparent; border: none;}
+
+html,
+
+body {
+    font-family: sans-serif; font-size: $font-size-s !important; font-weight: $font-weight-normal;
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    line-height: 1.5em;
+    position: relative; margin: 0px; text-rendering: geometricPrecision !important;
+    }
+
+.fonts-loaded {
+    font-family: Nunito; font-size: $font-size-s !important; font-weight: $font-weight-normal;
+    min-height: 100%;
+    height: 100%;
+    max-height: 100%;
+    line-height: 1.5em;
+    position: relative; margin: 0px; text-rendering: geometricPrecision !important;
+    }
+
+button, input, optgroup, select, textarea {font-family: sans-serif; vertical-align: middle; line-height: 1.5em; text-rendering: geometricPrecision !important;}
+
+
+.btn-primary {color: $se-white; background-color: $se-life-green !important; border-color: $se-life-green !important;}
+.btn-primary:hover {color: $se-white !important; background-color: $se-life-green !important; border-color: $se-life-green !important;}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+color: $se-white; background-color: $se-life-green; border-color: $se-life-green;
+}
+
+a {
+text-decoration: none !important;
+}
+ol, ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.font-12{
+font-size:12px !important;
+}
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+}
+
+
+select::-ms-expand {
+display: none;
+}
+
+.insideIcons {right: 15px; z-index: 100; position: absolute; top: 2px; cursor: pointer; font-size: 2rem;}
+
+.insideIcons1{
+margin-left: -30px;
+z-index: 100;
+position: relative;
+top: 5px;
+cursor: pointer;
+font-size: $font-size-xxl;
+}
+.form-input {
+border-radius: 0;
+height: 45px;
+padding: 10px;
+}
+
+.small{
+font-size:12px !important;
+}
+.form-input-small {
+max-width: 100px !important;
+}
+
+.form-input-medium {
+width: 150px !important;
+}
+
+.alert {
+padding-left: 0;
+}
+.center{
+text-align: center;
+}
+
+.alert-danger {
+background-color: transparent;
+border: 0;
+color: #FB0D0D;
+font-size: $font-size-xss;
+}
+
+.CountryNumberInput {
+width: 100% !important;
+height: 27px !important;
+}
+.pointer{cursor: pointer;}
+
+
+.image_view{
+height: 70px;
+width: 70px;
+}
+
+.btn-dark {
+background: $se-dark-grey !important;
+}
+
+/* Common Styles */
+.btn {
+cursor: pointer;
+font-size: $font-size-s !important;
+
+}
+
+
+.header-font {
+font-size: $font-size-m;
+}
+
+.subheader-font {font-size: $font-size-s; font-weight: $font-weight-bolder;}
+
+.body_display{
+text-align: center;
+height: 60vh;
+overflow: auto;
+
+}
+.text-success {
+color: #28a745!important;
+font-size: 13px;
+top: 4px;
+position: relative;
+}
+.info_color{
+float: right;
+font-size: 18px !important;
+color: blue !important;
+top: 0px;
+position: relative;
+}
+
+
+.modal-header {
+background: $color-brand;
+color: $se-white;
+}
+
+
+
+.mat-dialog-container {
+padding: 0px !important;
+overflow: hidden !important;
+}
+
+.mat-dialog-content {
+margin: 0px !important;
+}
+.minusIconPadding {cursor: pointer; float: left;}
+
+.plusIconPadding {cursor: pointer; float: right;}
+
+.minusIconPaddingBom {cursor: pointer; padding-right: 12px;}
+.plusIconPaddingBom {cursor: pointer; padding-left: 12px;}
+
+
+.mat-form-field-infix {
+width: 140px !important;
+}
+.iconCol{
+color: #3dcd58 ;
+}
+/* to change arrow when focused */
+.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-arrow {
+color: $color-brand;
+}
+
+/* to change underline when focused */
+.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-underline {
+background-color: $color-brand;
+}
+
+/* to change plceholder text when focused */
+.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-trigger {
+color: $color-brand;
+}
+
+/* shorter css */
+
+.mat-select:focus:not(.mat-select-disabled).mat-primary .mat-select-arrow,
+.mat-select-underline,
+.mat-select-trigger {
+color: $color-brand;
+}
+
+.mat-form-field-infix {
+border-bottom: 2px solid $color-brand !important;
+}
+
+
+/* to change selected item color in the select list */
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {color: #63961C;}
+
+.right-aligned {float: right; position: relative; }
+
+.nav-link {font-size: $font-size-m;}
+.modal-footer{padding: 10px !important;}
+.custom-control-input:checked~.custom-control-label::before {color: #fff; border-color: $se-white !important; background-color: $color-brand !important;}
+.custom-control-input:checked .custom-control-label::before {color: #fff; border-color: $se-white !important; background-color: $color-brand !important;}
+
+.custom-control-label {padding: 3px !important;}
+
+
+
+.noSelect {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+.tooltip-inner {max-width: 200px; min-width: 100px; padding: .25rem .5rem; color: #fff !important; text-align: center; background-color: #007bff !important; border-radius: .25rem; }
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .bs-tooltip-bottom .arrow::before {bottom: 0; border-width: 0 .4rem .4rem; border-bottom-color: #007bff !important;}
+.bs-tooltip-auto[x-placement^=left] .arrow::before, .bs-tooltip-left .arrow::before {left: 0; border-width: .4rem 0 .4rem .4rem; border-left-color: #007bff !important;}
+.bs-tooltip-auto[x-placement^=right] .arrow::before, .bs-tooltip-right .arrow::before {right: 0; border-width: .4rem .4rem .4rem 0; border-right-color: #007bff !important; }
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {right: 0; border-width: .4rem .4rem .4rem 0; border-right-color: #007bff !important;}
+////////////////////////////Card s with image checkbox css///////////////////////////////
+.card-header{background-color: $se-white; height: auto; padding: 0.75rem 0.75rem !important;}
+
+.btn_footer_modal{
+height: 32px;
+padding: 10px;
+width: 70px;
+}
+.label_align{
+float: left;
+font-size: 16px;
+font-weight: 500;
+border-bottom: 1px solid grey;
+line-height: 1.6;
+}
+.value_bind{
+float: left;
+text-align: left;
+font-size: 13px;
+color: black;
+line-height: 1.6;
+width: 35vw;
+}
+.key_align{
+font-size: 13px;
+color: black;
+line-height: 1.6;
+width: 25vw;
+font-weight: 500;
+text-align: left;
+
+}
+.imgclass_align{padding: 10px; margin: 15px; height: 150px; width: 150px; cursor: pointer;}
+.checbox_align{margin-top: 10px; position: absolute; left: 5px; width: 28px; top: 0px;}
+.subheader{margin-bottom: 3px;}
+.unica{background:$se-dark-grey !important; color: $se-white; text-align: center; border: 0px; font-family: sans-serif; padding: 1px 6px 3px 6px; margin-right: 4px;}
+
+.card-header{background-color: $se-white; height: auto; padding: 0.75rem 0.75rem !important;}
+
+
+
+
+.documentsContainer {
+height: calc(100vh - 86px);
+overflow: auto;
+
+}
+.backgroundShade {
+background: #f2f2f2;
+height: calc(100vh - 105px) !important;
+}
+
+.backgroundShade-custom {
+    background: #f2f2f2;
+    }
+
+
+
+.wdContainer{
+height: calc(100vh - 142px) !important;
+
+}
+
+.electrical_container{
+height: calc(100vh - 150px) !important;
+
+}
+// border custom on select checkbox
+
+.no_padd{padding-right: 0px !important; padding-left: 0px !important;}
+.no_padd_left{padding-left: 0px !important;}
+.no_padd_right{padding-right: 0px !important;}
+/* Media query ---------------------------------------------------------------------*/
+/*--------------------------- Color variations ----------------------*/
+/* Large Layout: 1920px */
+/* Medium Layout: 1280px */
+/* Tablet Layout: 768px */
+/* =================================== */
+/*  Basic Style 
+/* =================================== */
+/* Tablet */
+@media screen and (min-width: $media-screen-s_m) {
+.form-input {max-width: 360px; width: 360px;}
+
+}
+
+
+/* Buisness Laptops / Desktops*/
+@media (min-width:$media-screen-s) and (max-width: $media-screen-m_l_1){
+
+.column {margin: 16px;}
+.align_Vertical{position: absolute; right: 0px; top: 2px;}
+
+.fav_black {font-size: 20px; color: none; top: 3px; position: absolute; right: 38px !important; text-align: right; color: green !important;}
+.optionMainContainer_home{height: 0vh; background: $se-white; position: absolute; right: 0px; left: 9vh; top: 15px;}
+
+.catalogList {max-height: 62vh; overflow-y: auto; overflow-x: hidden;}
+.myList{max-height: 62vh; overflow-y: auto; overflow-x: hidden; }
+.switchboard_container{min-height: 72vh; max-height: 72vh; overflow-x: scroll; overflow-y: scroll;}
+.padding_Null{padding-right: 0px !important;}
+.padd_cate{padding-left: 6px !important; padding-right: 0px !important;}
+// .home_container{height: calc(100vh - 68px) !important;  overflow: auto;}
+.style_box{width: 400px; height: 85px; margin-top: 10px; border: 1px solid #3dcd58;}
+.discountTable{font-size: x-small;}
+.listOfProjects {max-height: 74vh; overflow: auto; overflow-x: hidden; font-size: $font-size-m;}
+
+.addToMyList{float: right; font-size: 8px !important; position: relative; top: 5px;}
+
+.header_box {font-size: 8px !important;}
+.style_create_button{position: relative; right: 97px;}
+
+.listOfProjects-custom{font-size: $font-size-s; line-height: 12px;}
+
+}
+
+
+.functionContainer { height: 30vh; overflow: auto; margin-bottom: 10px; }
+.backgroundShade {background: #f2f2f2;}
+
+.modal-subtitle{font-size: $font-size-s; }
+.modal-title {font-size: $font-size-xl !important; }
+
+.header_box{font-size: 10px; }
+.addRoomModal {height: calc(100vh - 216px) !important;}
+.description{ width: 100%;}
+.disable_header_box{ font-size: 10px; }
+.guideme {bottom: 8px;}
+#carousel{overflow: auto; position: relative; white-space: nowrap; padding-bottom: 8px;}
+.OverFlow {line-height: 2.4;}
+
+.tooltip-container {right: 20px;}
+
+.modal-style {height: 71vh;}
+
+
+/* Engineering Laptops / Desktops*/
+// 1368 ----------------- 1920
+@media (min-width: $media-screen-m_l) and (max-width: $media-screen-xxxl) {
+
+.fav_black {font-size: 20px; color: none; position: absolute; right: 46px !important; text-align: right; color: green !important;}
+.align_Vertical{position: absolute; right: 0px;}
+
+.padd_cate{padding-left: 6px !important; padding-right: 0px !important;}
+.catalogList {max-height: 75vh; overflow-y: auto; overflow-x: hidden;}
+
+.myList{max-height: 67vh; overflow-y: auto; overflow-x: hidden;}
+.switchboard_container{min-height: 75vh; max-height: 75vh; overflow-x: scroll; overflow-y: scroll;}
+// .home_container{height: calc(100vh - 83px) !important;}
+
+label.container_checkbox.radio-inline {margin-right: 15px;}
+label.container_checkbox.radio-inline:last-child {margin-right: 0px;}
+
+.style_box{width: 455px; height: 105px; margin-top: 10px; border: 1px solid #3dcd58;}
+.listOfProjects {font-size: $font-size-m; max-height: 80vh; overflow: auto; overflow-x: hidden; min-height: 80vh; }
+
+.addToMyList{float: right; font-size: 10px !important; position: relative; top: 5px;}
+.edesign_header {background-color: $se-white; border-bottom: 2px solid $color-brand; min-height: 50px; width: 100%;}
+
+.style_create_button{position: relative; right: 143px; }
+.functionContainer {height: 36vh; overflow: auto; margin-bottom: 10px;}
+.backgroundShade {background: #f2f2f2;}
+.disable_header_box{font-size: 12px;}
+
+.addRoomModal {height: calc(100vh - 180px) !important; }
+
+.tooltip-container {right: 40px;}
+.OverFlow {line-height: 4.2;}
+.guideme {bottom: 10px;}
+
+.modal-style {height: 73vh;}
+.description{width: 100%;}
+
+.listOfProjects-custom{font-size: $font-size-s; line-height: 12px;}
+
+}
+//
+
+.red{color: $se-red;}
+.medium_green{color: $se-medium-green;}
+
+// Styles for T&C Page
+.term-height{height: 60vh; overflow-y: scroll; font-size: 12x;}
+
+ol {list-style-type: none; counter-reset: item; margin: 0; padding: 0;}
+ol > li {display: table; counter-increment: item; margin-bottom: 0.6em !important;}
+ol > li:before {content: counters(item, "."); display: table-cell; padding-right: 0.6em; font-weight: 700;}
+li ol > li {margin: 0;}
+li ol > li:before {content: counters(item, ".");}
+
+.disable_btn {pointer-events:none !important; background-color: #61494930;}
+.disable_btn:hover {pointer-events:none !important;}
+.btn-success{cursor: pointer; }
+.input_align{position: relative; bottom: 2px;}
+
+
+
+
+.tick-icon{font-size: 24px !important; vertical-align: bottom; font-weight: 600;}
+
+// Brand Color Class
+
+.se-dark-green{color: $se-dark-green;}
+.se-logo-green{color: $se-logo-green;}
+.se-life-green{color: $se-life-green;}
+.se-medium-green{color: $se-medium-green;}
+.se-light-green{color: $se-light-green;}
+.se-dark-sky-blue{color: $se-dark-sky-blue;}
+.se-medium-blue{color: $se-medium-blue;}
+.se-sky-blue{color: $se-sky-blue;}
+.se-fuchsia-red{color: $se-fuchsia-red;}
+.se-red{color: $se-red;}
+.se-honeysuckle-orange{color: $se-honeysuckle-orange;}
+.se-sunflower-yellow{color: $se-sunflower-yellow;}
+.se-sky-blue-10p{color: $se-sky-blue-10p;}
+.se-red-10p{color: $se-red-10p;}
+.se-true-black{color: $se-true-black;}
+.se-black{color: $se-black;}
+.se-anthracite-grey{color: $se-anthracite-grey;}
+.se-ultra-dark-grey{color: $se-ultra-dark-grey;}
+.se-super-dark-grey{color: $se-super-dark-grey;}
+.se-dark-grey{color: $se-dark-grey;}
+.se-transparent-grey{color: $se-transparent-grey;}
+.se-transparent-gray{color: $se-transparent-gray;}
+.se-medium-grey{color: $se-medium-grey;}
+.se-light-grey{color: $se-light-grey;}
+.se-super-light-grey{color: $se-super-light-grey;}
+.se-ultra-light-grey-1{color: $se-ultra-light-grey-1;}
+.se-ultra-light-grey-2{color: $se-ultra-light-grey-2;}
+.se-white{color: $se-white;}
+.color-title-background{color: $color-title-background;}
+.color-background-brighter{color: $color-background-brighter;}
+.se-warning{color: $se-warning;}
+.se-label-color{color: $se-label-color;}
+

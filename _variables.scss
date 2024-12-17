@@ -1,0 +1,206 @@
+
+
+
+
+// Medias
+$media-screen-xxs: 360px;
+$media-screen-xs: 640px;
+$media-screen-s: 768px;
+$media-screen-s_m: 992px;
+
+$media-screen-m: 1024px;
+$media-screen-m_1: 1025px;
+
+$media-screen-l: 1280px;
+$media-screen-m_l_1: 1368px;
+$media-screen-m_l: 1369px;
+
+$media-screen-xl: 1440px;
+$media-screen-xxl: 1680px;
+$media-screen-xxxl: 1920px;
+
+// Borders
+$border-light: 1px;
+
+// Images
+$image_path: '/assets/images/';
+
+// Fonts
+$font-weight-light: 200;
+$font-weight-semilight: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-bolder:700;
+$font-size-xsss: .5rem;    // 8px
+
+$font-size-xss: .75rem;   // 12px
+$font-size-xs: .8125rem;    // 13px
+$font-size-s: .875rem;    // 14px
+$font-size-m: 1rem;      // 16px
+$font-size-l: 1.125rem;   // 18px
+$font-size-xl:1.2rem;
+$font-size-xxl: 1.375rem;   // 22px
+$font-size-xxxl: 2.5rem; // 40px
+
+
+$font-size-xxxxl: 3.125rem; //50px
+$font-size-xxxxxl: 4.125rem; //65px
+$font-size-xxxxxxl: 8rem; 
+
+
+
+
+// Colors
+$color-brand: #3dcd58;
+$color-brand-dark: darken($color-brand, 10%);
+$color-brand-darker: darken($color-brand, 20%);
+$color-brand-bright: lighten($color-brand, 10%);
+$color-brand-brighter: lighten($color-brand, 20%);
+
+$color-secondary: #83D01B;
+$color-secondary-dark: darken($color-secondary, 5%);
+$color-secondary-darker: darken($color-secondary, 20%);
+$color-secondary-bright: lighten($color-secondary, 10%);
+$color-secondary-brighter: lighten($color-secondary, 20%);
+
+$color-hyperlink:#007bff;
+$color-list-background:#cccccc;
+
+
+$color-mandatory:#ff3333;
+
+// Animations
+$animation-speed-default: .35s;
+$animation-speed-slow: .5s;
+$animation-speed-fast: .15s;
+
+
+
+// Brand Color
+
+$se-dark-green:             #007626  !default;
+$se-logo-green:             #009530 !default;    //Only for the SE logo color
+$se-life-green:             #3DCD58 !default;    //Primary _ Success
+$se-medium-green:           #32AD3C !default;
+$se-light-green:            #70E07C !default;
+$se-dark-sky-blue :         #0087CD !default;
+$se-medium-blue :           #219BFD !default;
+$se-sky-blue :              #42B4E6 !default;
+$se-fuchsia-red:            #B10043 !default;
+$se-red:                    #DC0A0A !default;    //Red Error
+$se-honeysuckle-orange:     #E47F00 !default;
+$se-sunflower-yellow:       #FFD100 !default;
+$se-sky-blue-10p:           #ECF7FC !default;
+$se-red-10p:                #FCEAE7 !default;
+$se-true-black:             #000000 !default;
+$se-black:                  #0F0F0F !default;
+$se-anthracite-grey :       #333333 !default;    // Active text
+$se-ultra-dark-grey:        #434343 !default;
+$se-super-dark-grey :       #505559 !default;
+$se-dark-grey:              #626469 !default;    //Selected State
+$se-transparent-grey:       rgba(0,0,0,0.5) !default;
+$se-transparent-gray:       $se-transparent-grey !default;
+$se-medium-grey :           #9FA0A4 !default;
+$se-light-grey :            #CBCBCB !default;    // Disable Text
+$se-super-light-grey:       #E6E6E6 !default;
+$se-ultra-light-grey-1 :    #EDEDED !default;
+$se-ultra-light-grey-2 :    #F7F7F7 !default;
+$se-white:                  #FFFFFF !default;
+$color-title-background: #f2f2f2 !default;
+$color-background-brighter: #EEEEFF !default;
+$se-warning:#81691e;
+$se-label-color:#8c8c8c;
+
+// Spacing element
+// ==========================================================================
+$spacing: 8px !default;
+$spacing-small: 4px !default;
+$spacing-large: 16px !default;
+$spacing-xlarge: 32px !default;
+
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+$centered: 1180px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+
+
+// Typography
+// ==========================================================================
+
+$off-black: rgba(0, 0, 0, 0.87) !default;
+// Header Styles
+$h1-fontsize: 42px !default;
+$h2-fontsize: 37px !default;
+$h3-fontsize: 30px !default;
+$h4-fontsize: 22px !default;
+$h5-fontsize: 16px !default;
+$h6-fontsize: 14px !default;
+$p-fontsize: 16px !default;
+$base-fontsize: 14px !default;
+$small-fontsize: 13px !default;
+$medium-fontsize: 16px !default;
+$large-fontsize: 18px !default;
+$h-margin: 16px !default;
+
+// Flow Text
+// ==========================================================================
+
+$range : $large-screen - $small-screen !default;
+$intervals: 20 !default;
+$interval-size: $range / $intervals !default;
+
+
+$border-radius: 2px !default;
+$border-radius-card: 4px !default;
+
+$line-height-sm: 1.2 !default;
+
+$inner-shadow-top: inset 0 7px 3px -7px rgba(0, 0, 0, 0.4);
+
+//== widget
+//** widget header border color
+$divider-color: $se-super-light-grey;
+
+// Scrollbar
+/* width */
+$scrollbar-width: 8px; // 6px for width and 8px for bottom
+$scrollbar-side-padding: $spacing-small;
+
+
+
+// Button
+
+.btn-sm{padding: .3rem .8125rem; font-size: $font-size-xs !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-md{padding: .35rem .875rem; font-size: $font-size-s !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+.btn-lg{padding: .4rem 0.8rem; font-size: 1rem !important; line-height: 1.5; border-radius: 0rem; border: 0px;}
+
+
+// Button class
+
+
+.btn-success {background: $color-brand !important; color: $se-white;}
+.btn-success:hover{ background: $se-logo-green !important;  color: #ffffff; }
+.btn-success:focus{box-shadow: none;}
+
+.btn-blue {background-color: $se-dark-sky-blue; color: $se-white; cursor: pointer;}
+
+.btn-light {background: $se-ultra-light-grey-1 !important;}
+.btn-light:hover{ background: #CBCBCB !important;  color: #333333; }
+
+
+
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    .loadingApp {
+      border: 8px solid #f3f3f3;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      margin: -75px 0 0 -75px;
+
+      border-radius: 50%;
+      border-top: 8px solid #3dcd58;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      /* Safari */
+      animation: spin 2s linear infinite;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <meta charset="utf-8" />
+  <title>mySchneider eDesign</title>
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <script>
+    var gaTagManagerKey = "";
+    //var oneTrustId="";
+    if (window.location.hostname.indexOf("edesignv2dev") > -1
+      || window.location.hostname.indexOf("localhost") > -1
+      || window.location.hostname.indexOf("dev1.edesign") > -1
+      || window.location.hostname.indexOf("dev2.edesign") > -1
+      || window.location.hostname.indexOf("dev.edesign-home") > -1) {
+      gaTagManagerKey = "GTM-5WGBFDW"; //"GTM-MM5LXGL";
+      //oneTrustId="21799d79-d173-421f-846e-c7cef429e7c9-test";
+    } else if (window.location.hostname.indexOf("edesignv2ppr") > -1
+      || window.location.hostname.indexOf("ppr.edesign-home") > -1
+      || window.location.hostname.indexOf("uat1.edesign-home") > -1) {
+      gaTagManagerKey = "GTM-5WGBFDW"; //"GTM-MM5LXGL";
+      //oneTrustId="21799d79-d173-421f-846e-c7cef429e7c9-test";
+    } else if (window.location.hostname.indexOf("edesign-home") > -1) {
+      gaTagManagerKey = "GTM-5WGBFDW"; //"GTM-MM5LXGL";
+      //oneTrustId="21799d79-d173-421f-846e-c7cef429e7c9";
+    }  
+
+    function updateSource(iframeObject){      
+      iframeObject.src="https://www.googletagmanager.com/ns.html?id="+gaTagManagerKey;
+      console.log(iframeObject.src);
+    }
+
+    function trackReseller() {
+      if (window != window.parent && window.location.href.indexOf("resellerName") < 0) {
+        let resellerName = document.referrer.split('.')[1];
+        window.location.href = window.location.href + "&resellerName=" + resellerName;
+      }
+    }
+
+    trackReseller();
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+    {
+      window.location.href = "/assets/error_page_browser.html";
+    }
+  </script>
+  <script>
+    (function (w, d, n, u, s) {
+      w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) };
+      var a = d.createElement(s), m = d.getElementsByTagName(s)[0];
+      a.async = true; a.src = u; m.parentNode.insertBefore(a, m)
+    })(window, document, 'DSPCounter', '//tags.soloway.ru/DSPCounter.js', 'script');
+  </script>
+  <script type="text/javascript">
+    DSPCounter('send', {
+      'sid': '221901',
+      'user_id': ''
+    });
+  </script>
+  <!--  RTB  Counter end -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe onLoad="updateSource(this);" height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="loadingApp" id="initialLoader">
+  </div>
+  <app-root></app-root>
+</body>
+
+<script type="text/javascript">
+  function loadGoogleTagManager() {
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', gaTagManagerKey);
+
+    /*var scriptElement = document.createElement("SCRIPT");
+    scriptElement.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+    scriptElement.type = "text/javascript";
+    scriptElement.setAttribute("data-domain-script", oneTrustId);
+    scriptElement["charset"] = "UTF-8";
+    document.body.appendChild(scriptElement);*/
+  }
+
+</script>
+
+<link rel="stylesheet" href="assets/fonts/stylesheet.css" async>
+
+</html>
